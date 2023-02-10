@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "grace"
+    "grace",
+    'cloudinary_storage',
+    'cloudinary',
 ]
 
 CRISPY_TEMPLATE_PACK = 'uni_form'
