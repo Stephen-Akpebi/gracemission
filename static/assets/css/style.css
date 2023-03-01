@@ -548,10 +548,10 @@ h3 {
     font-size: 16px;
     font-weight: 600;
     border: 0;
-    border: 1px solid #00C0F0;
+    border: 1px solid #2870FF;
     letter-spacing: 0;
     text-align: center;
-    color: #00C0F0 !important;
+    color: #2870FF !important;
     text-transform: capitalize;
     cursor: pointer;
 }
@@ -567,9 +567,9 @@ h3 {
 /* line 19, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_btn.scss */
 
 .boxed-btn:hover {
-    background: #00C0F0;
+    background: #2870FF;
     color: #fff !important;
-    border: 1px solid #00C0F0;
+    border: 1px solid #2870FF;
 }
 
 
@@ -591,7 +591,7 @@ h3 {
 
 .boxed-btn3 {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
-    background: #00C0F0;
+    background: #2870FF;
     color: #fff;
     display: inline-block;
     padding: 12px 42px;
@@ -615,8 +615,8 @@ h3 {
 
 .boxed-btn3:hover {
     background: transparent;
-    color: #00C0F0 !important;
-    border: 1px solid #00C0F0;
+    color: #2870FF !important;
+    border: 1px solid #2870FF;
 }
 
 
@@ -945,14 +945,14 @@ h3 {
 
 .slicknav_menu .slicknav_nav a:hover {
     background: transparent;
-    color: #00C0F0;
+    color: #2870FF;
 }
 
 
 /* line 32, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slick-nav.scss */
 
 .slicknav_menu .slicknav_nav a.active {
-    color: #00C0F0;
+    color: #2870FF;
 }
 
 @media (max-width: 767px) {
@@ -1277,7 +1277,7 @@ h3 {
 /* line 130, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_header.scss */
 
 .header-area .main-header-area .Appointment .book_btn a {
-    background: #00C0F0;
+    background: #2870FF;
     padding: 12px 26px;
     font-size: 14px;
     font-weight: 400;
@@ -1299,9 +1299,9 @@ h3 {
 /* line 141, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_header.scss */
 
 .header-area .main-header-area .Appointment .book_btn a:hover {
-    background: #00C0F0;
+    background: #2870FF;
     color: #fff;
-    border: 1px solid #00C0F0;
+    border: 1px solid #2870FF;
 }
 
 
@@ -1391,7 +1391,7 @@ h3 {
 /* line 213, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_header.scss */
 
 .header-area .main-header-area .main-menu ul li a:hover {
-    color: #00C0F0;
+    color: #2870FF;
 }
 
 
@@ -2170,7 +2170,7 @@ h3 {
     flex-direction: row-reverse;
     z-index: 2;
     height: 8px;
-    background: #00C0F0;
+    background: #2870FF;
     border-radius: 30px;
 }
 
@@ -2319,7 +2319,7 @@ h3 {
     top: 0;
     left: 0;
     height: 8px;
-    background-color: #00C0F0;
+    background-color: #2870FF;
     border-radius: 30px;
 }
 
@@ -2331,7 +2331,7 @@ h3 {
     top: 0;
     left: 0;
     height: 8px;
-    background-color: #00C0F0;
+    background-color: #2870FF;
     border-radius: 30px;
 }
 
@@ -2498,14 +2498,14 @@ h3 {
 
 .music_gallery .audioplayer:not(.audioplayer-playing) .audioplayer-playpause {
     background: rgba(91, 130, 255, 0);
-    border: 1px solid #00C0F0 !important;
+    border: 1px solid #2870FF !important;
 }
 
 
 /* line 239, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_music_area.scss */
 
 .music_gallery .audioplayer:not(.audioplayer-playing) .audioplayer-playpause a {
-    border-left: 12px solid #00C0F0 !important;
+    border-left: 12px solid #2870FF !important;
 }
 
 
@@ -2531,7 +2531,7 @@ h3 {
     top: -4px;
     content: "\f100";
     font-family: Flaticon;
-    color: #00C0F0;
+    color: #2870FF;
     font-weight: 900;
 }
 
@@ -2574,7 +2574,7 @@ h3 {
     top: -8px;
     content: "\f100";
     font-family: Flaticon;
-    color: #00C0F0;
+    color: #2870FF;
     font-weight: 900;
 }
 

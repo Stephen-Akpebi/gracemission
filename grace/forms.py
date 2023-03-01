@@ -8,7 +8,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render,redirect
 from django.core.exceptions import ValidationError
 from django.forms import ModelForm
-from .models import Contact
+from .models import Contact, Charity
 
 
 
@@ -17,9 +17,18 @@ from .models import Contact
 #     class Meta:
 #         model = Galary
 #         fields = ('title', 'image2')
-
-
-
+class CharityForm(forms.ModelForm):
+    
+    class Meta:
+        model = Charity
+        fields = ('name','phone','email','amount')
+    
+    Widgets  = {
+        'name': forms.TextInput(attrs={'class': 'form-control'}),
+        'phone': forms.TextInput(attrs={'class': 'form-control'}),
+        'email': forms.TextInput(attrs={'class': 'form-control'}),
+        'amount': forms.TextInput(attrs={'class': 'form-control'}),
+    }
 
 
 class ContactForm(forms.ModelForm):

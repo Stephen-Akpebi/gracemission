@@ -50,6 +50,10 @@ INSTALLED_APPS = [
     "grace",
     'cloudinary_storage',
     'cloudinary',
+    "bootstrap5",
+    'crispy_forms',
+    'rest_framework',
+    
 ]
 
 CRISPY_TEMPLATE_PACK = 'uni_form'
@@ -210,7 +214,7 @@ CLOUDINARY_STORAGE = {
     'API_KEY': '234324812698751',
     'API_SECRET': '-470BOgDGAyUoBOUWLmaAakRARY',
 }
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.RawMediaCloudinaryStorage'
 
 
 if os.getcwd() == 'app':

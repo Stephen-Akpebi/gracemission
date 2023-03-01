@@ -1,0 +1,197 @@
+{% extends 'grace/base1.html' %}
+{% block content %}
+{% load static %}
+    <!-- Carousel Start -->
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header1 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Gallery</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Event Gallery</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Carousel End -->
+    <!-- youtube_video_area  -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-white py-1 px-3 mb-3">Gallery</div>
+                <h1 class="display-6 mb-5">Events Gallery</h1>
+            </div>
+            <div class="gallery_area">
+                <div class="container">
+                    <div class="row grid">
+                        {% for event_gallery in event_gallery_list %}
+                        <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
+                            <div class="single-gallery mb-30">
+                                <div class="portfolio-img">
+                                        <img src="{{ event_gallery.image.url }}" alt="">
+                                </div>
+                                <div class="gallery_hover">
+                                        <a class="popup-image" href="{{ event_gallery.image.url }}" class="hover_inner">
+                                            <i class="ti-plus"></i>
+                                            <h3 class="text-white">{{ event_gallery.title }}</h3>
+                                            <p class="text-danger">{{ event_gallery.date }}</p>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
+                            <div class="single-gallery mb-30">
+                                <div class="portfolio-img">
+                                        <img src="{{ event_gallery.image2.url }}" alt="">
+                                </div>
+                                <div class="gallery_hover">
+                                        <a class="popup-image" href="{{ event_gallery.image2.url }}" class="hover_inner">
+                                            <i class="ti-plus"></i>
+                                            <h3 class="text-white">{{ event_gallery.title2 }}</h3>
+                                            <p class="text-danger">{{ event_gallery.date }}</p>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
+                            <div class="single-gallery mb-30">
+                                <div class="portfolio-img">
+                                        <img src="{{ event_gallery.image3.url }}" alt="">
+                                </div>
+                                <div class="gallery_hover">
+                                        <a class="popup-image" href="{{ event_gallery.image3.url }}" class="hover_inner">
+                                            <i class="ti-plus"></i>
+                                            <h3 class="text-white">{{ event_gallery.title3 }}</h3>
+                                            <p class="text-danger">{{ event_gallery.date }}</p>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
+                            <div class="single-gallery mb-30">
+                                <div class="portfolio-img">
+                                        <img src="{{ event_gallery.image4.url }}" alt="">
+                                </div>
+                                <div class="gallery_hover">
+                                        <a class="popup-image" href="{{ event_gallery.image4.url }}" class="hover_inner">
+                                            <i class="ti-plus"></i>
+                                            <h3 class="text-white">{{ event_gallery.title4 }}</h3>
+                                            <p class="text-danger">{{ event_gallery.date }}</p>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
+                            <div class="single-gallery mb-30">
+                                <div class="portfolio-img">
+                                        <img src="{{ event_gallery.image5.url }}" alt="">
+                                </div>
+                                <div class="gallery_hover">
+                                        <a class="popup-image" href="{{ event_gallery.image5.url }}" class="hover_inner">
+                                            <i class="ti-plus"></i>
+                                            <h3 class="text-white">{{ event_gallery.title5 }}</h3>
+                                            <p class="text-danger">{{ event_gallery.date }}</p>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
+                            <div class="single-gallery mb-30">
+                                <div class="portfolio-img">
+                                        <img src="{{ event_gallery.image6.url }}" alt="">
+                                </div>
+                                <div class="gallery_hover">
+                                        <a class="popup-image" href="{{ event_gallery.image6.url }}" class="hover_inner">
+                                            <i class="ti-plus"></i>
+                                            <h3 class="text-white">{{ event_gallery.title6 }}</h3>
+                                            <p class="text-danger">{{ event_gallery.date }}</p>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <!--/ gallery -->
+            <div class="section-top-border">
+				<h3 class="mb-30">MEETING DAYS</h3>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">SUNDAYS</h4>
+							<p>SUNDAYS
+                                CHURCH SERVICE
+                                8.00AM-10.30AM</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">FRIDAYS</h4>
+							<p>PRAYER SERVICE
+                                7.00PM-8.00PM.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">SATURDAYS</h4>
+							<p>CHOIR REHEARSALS
+                                1.00PM-3.00PM,
+                                EVANGELISM
+                                3.00PM-5.00PM
+                        </div>
+					</div>
+				</div>
+			</div>
+    <!-- music_area end  -->
+        </div>
+    </div>
+    <!-- Service End -->
+    
+
+    <!-- Testimonial End -->
+    {% include 'grace/footer1.html' %}
+    <!-- JS here -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+crossorigin="anonymous">
+</script>
+<script src="{% static 'assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+<script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/ajax-form.js' %}"></script>
+<script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/audioplayer.js' %}"></script>
+<script src="{% static 'assets/js/scrollIt.js' %}"></script>
+<script src="{% static 'assets/js/jquery.scrollUp.min.js' %}"></script>
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/nice-select.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.slicknav.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/plugins.js' %}"></script>
+<script src="{% static 'assets/js/gijgo.min.js' %}"></script>
+<script src="{% static 'assets/js/slick.min.js' %}"></script>
+<!--contact js-->
+<script src="{% static 'assets/js/contact.js' %}"></script>
+<script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.form.js' %}"></script>
+<script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
+
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+<script>
+    $(function() {
+        $('audio').audioPlayer({
+
+        });
+    });
+</script>
+    {% endblock content %}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
+{% load bootstrap5 %}
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +11,10 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'asset/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'asset/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'asset/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'asset/favicon/site.webmanifest' %}">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,21 +60,21 @@
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker  me-2"></i>PS Global Gate1, Plot 399, 42nd Street Comm. 25</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small>
+                <small><i class="fa fa-map-marker  me-2"></i>PS Global Gate1, Plot 399, 42nd Street Community 25</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>gracemission.baptist@gmail.com</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="text-white-50 ms-3" href=""><i class="fab fa-instagram"></i></a>
+                <a class="text-danger ms-3" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="text-danger ms-3" href=""><i class="fab fa-twitter"></i></a>
+                <a class="text-danger ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-danger ms-3" href=""><i class="fab fa-instagram"></i></a>
             </div>
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="{% url 'grace:home' %}" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold text-primary m-0">Grace<span class="text-white">Mission</span></h1>
+            <a href="{% url 'grace:home' %}" class="navbar-brand ms-4 ms-lg-0"><img src="{% static 'asset/img/glogo.png' %}" alt="">
+                {% comment %} <h1 class="fw-bold text-primary m-0">Grace<span class="text-white">Mission</span></h1> {% endcomment %}
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -82,43 +86,44 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
                         <div class="dropdown-menu m-0">
-                            <a href="" class="dropdown-item">Events</a>
-                            <a href="" class="dropdown-item">Events Gallery</a>
-                            <a href="" class="dropdown-item">Events Calendar</a>
+                            <a href="/event" class="dropdown-item">Events</a>
+                            <a href="/event_gallery" class="dropdown-item">Events Gallery</a>
+                            <a href="/calendar" class="dropdown-item">Events Calendar</a>
                         </div>
                         
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <div class="dropdown-menu m-0">
-                            <a href="" class="dropdown-item">Daily Services</a>
-                            <a href="" class="dropdown-item">Live stream</a>
+                            <a href="/sermon" class="dropdown-item">Daily Services</a>
+                            <a href="/live" class="dropdown-item">Live stream</a>
+                            <a href="/track" class="dropdown-item">Podcast</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Church</a>
                         <div class="dropdown-menu m-0">
-                            <a href="" class="dropdown-item">About Our Church</a>
-                            <a href="" class="dropdown-item">Our Community</a>
-                            <a href="" class="dropdown-item">Our Mission</a>
-                            <a href="/mess" class="dropdown-item">Sermons</a>
-                            <a href="" class="dropdown-item">Our Staff</a>
-                            <a href="" class="dropdown-item">Contacts</a>
+                            <a href="/about" class="dropdown-item">About Our Church</a>
+                            <a href="/community" class="dropdown-item">Our Community</a>
+                            <a href="/mission" class="dropdown-item">Our Mission</a>
+                            <a href="/sermon" class="dropdown-item">Sermons</a>
+                            <a href="/track" class="dropdown-item">Podcast</a>
+                            <a href="/pastors" class="dropdown-item">Our Pastors</a>
+                            <a href="/contact" class="dropdown-item">Contacts</a>
                         </div>
                         
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Giving</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Charity</a>
                         <div class="dropdown-menu m-0">
-                            <a href="" class="dropdown-item">Offerring/Tithe</a>
-                            <a href="" class="dropdown-item">Donate</a>
+                            <a href="/charity" class="dropdown-item">Donate</a>
                         </div>
                         
                     </div>
-                    <a href="" class="nav-item nav-link">Contact</a>
+                    <a href="/contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-outline-primary py-2 px-3" href="">
+                    <a class="btn btn-outline-primary py-2 px-3" href="/charity">
                         Donate
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                             <i class="fa fa-arrow-right"></i>
@@ -131,4 +136,5 @@
     <!-- Navbar End -->
     {% block content %}
     {% load static %}
+    {% load bootstrap5 %}
     {% endblock content %}
